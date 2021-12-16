@@ -1,0 +1,301 @@
+body {
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+}
+
+h5 {
+    margin: 0;
+}
+
+.primary-bg{
+    color: white;
+    background-color: #6096E5;
+}
+
+.primary-bg:hover{
+    color: white;
+}
+
+.iniciar-jogo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    border-radius: 8px;
+    padding: 50px;
+    background-color: white;
+    align-self: center;
+    width: 38%;
+    -webkit-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.05); 
+    box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.05);
+}
+
+.row {
+    margin: 0;
+}
+
+.game {
+    height: 100%;
+}
+
+.side-menu {
+    background-color: white;
+    -webkit-box-shadow: -29px 0px 29px 2px rgba(0,0,0,0.05); 
+    box-shadow: -7px 0px 29px 2px rgba(0,0,0,0.05);
+    padding: 50px;
+    height: 100%;
+    overflow: auto;
+}
+
+.add-issue {
+    color: white;
+    background-color: #0b5dd775;
+    border-radius: 10px;
+    height: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#taskName {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.add-issue:hover {
+    background-color: #6096E5;
+}
+
+.add-issue h5 {
+    margin-right: 5px;
+}
+
+.tasks {
+    margin-top: 50px;
+    height: 83%;
+}
+
+.task {
+    position: relative;
+    vertical-align: middle;
+    margin-top: 10px;
+    color: black;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: inline-block;
+    min-height: 100px;
+    cursor: pointer;
+}
+
+.task p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.task:hover {
+    background-color: #f1f1f1;
+}
+
+.selected{
+    border: solid 3px #0b5dd775;
+}
+
+.table-game {
+    position: absolute;
+    background-color: #ebebeb;
+    width: 35%;
+    height: 30%;
+    border-radius: 100px;
+    -webkit-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.05); 
+    box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.05);
+    left: calc(50% - 30%);
+    top: calc(40% - 15%);
+    padding: 50px;
+}
+
+.card-game {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.05); 
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.05);
+}
+
+#front {
+    transform: rotateY(180deg);
+    background-color: #f9f9f9;
+    border: solid #6096E5 2px;
+}
+
+#back {
+    background-image: url('./imgs/card-back.png') !important;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+div[name='flip'] {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d; 
+    transition: all .5s;
+}
+
+.p-board {
+    text-align: center;
+    width: 9%;
+    height: 33%;
+    position: absolute;
+}
+
+.position1 {
+    top: -64%;
+    left: 30%;
+}
+
+.position2 {
+    top: -64%;
+    left: 60%;
+}
+
+.position3 {
+    top: 14%;
+    right: -16%;
+}
+
+.position4 {
+    top: 115%;
+    left: 60%;
+}
+
+.position5 {
+    top: 115%;
+    left: 30%;
+}
+
+.position6 {
+    top: 14%;
+    left: -15%;
+}
+
+.choices {
+    display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    width: calc(35% + 12%);
+    height: 30%;
+    left: 14%;
+}
+
+.choice {
+    width: 9%;
+    height: 35%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.05); 
+    box-shadow: 0px 0px 29px 2px rgba(0,0,0,0.05);
+    border: solid 2px #6096E5;
+    align-self: center;
+    text-align: center;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.choice:hover {
+    color: black;
+    margin-bottom: 2%;
+    background-color: #e4e4e4;
+}
+
+.card-selected {
+    margin-bottom: 2%;
+    color: white;
+    background-color: #6096E5;
+}
+
+.card-selected:hover {
+    margin-bottom: 2%;
+    color: white;
+    background-color: #6096E5;
+}
+
+.button-vote {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.button-vote span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid #6096E5 3px;
+    align-self: center;
+}
+
+.button-vote p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.task-selected {
+    border: solid #6096E5 3px; 
+}
+
+.task-selected .button-vote span {
+    background-color: #6096E5;
+    border: solid #EBEBEB 3px;
+}
+
+.task-board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.task-board h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.show-cards {
+    cursor: pointer;
+    top: 5%;
+    right: 18%;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.show-cards span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid #6096E5 3px;
+    align-self: center;
+}
+
+.show-cards p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-right: 5px;
+}
